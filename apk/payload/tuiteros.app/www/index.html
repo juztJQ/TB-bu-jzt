@@ -16,10 +16,7 @@
 	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 	<script src="twitter.js"></script>
-    <script src="twitterR.js"></script>
-	<script src="jquery.masonry.min.js">
-    <script src="twitterR.js"></script>
-    </script>
+	<script src="jquery.masonry.min.js"></script>
      <link href="jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css"/>
 	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />	  
   
@@ -68,6 +65,25 @@ document.addEventListener("deviceready", function() {
 
      </script>
  
+
+<style type="text/css">
+
+
+#gallery {
+	
+}
+#gallery div,
+#gallery a {
+	display: block;
+	float: left;
+	color: #fff;
+	width: 70px;
+	height: 70px;
+	margin: 10 8px 8px 10;
+}
+</style>
+
+
 	<style type="text/css">
 		
 		#jstwitter {
@@ -114,39 +130,7 @@ body {
 }
 
 /*Slideshow Div Styles*/
-#twitter {
-			width: 100%;
-			font-family: arial;
-			font-size: 13px;
-			color: #333333;
-			padding: 5px;
-			margin:0;
-			display:block;
-		}
-		
-		#twitter .tweet {
-			width: 150px;
-			margin:5px;
-			padding: 5px;
-			float:left;
-			background:#f1f1f1;
-			border:3px solid #ddd;
-		}
-		
-		#twitter .tweet a {
-			text-decoration: none;
-			color: #13c9d0;
-		}
 
-		#twitter .tweet a:hover {
-			text-decoration: underline;
-		}
-		
-		#twitter .tweet .time {
-			font-size: 10px;
-			font-style: italic;
-			color: #666666;
-		}
 /*Alternative Animation (from top)*/
 /*#slideshow li img:not(:target) {
 	margin: -500px 0 0 0;
@@ -165,9 +149,6 @@ h1 {
 	width:100px;
 	
 }
-    body,td,th {
-	font-family: Verdana, Geneva, sans-serif;
-}
     </style>
 
 </head> 
@@ -183,7 +164,6 @@ h1 {
 			<li><a href="#page2">Noticias</a></li>
             <li><a href="#page3">Galería</a></li>
 			<li><a href="#page4">Equipo</a></li>
-            <li><a href="#radio">Radio Online</a></li>
 		</ul>		
 	</div>
 	<div data-role="footer">
@@ -208,58 +188,47 @@ h1 {
 	</div>
 </div>
 
-    <div data-role="page" id="page3">
-        <div data-role="header">
-            <h1>Galería</h1>
-        </div>
-        <div data-role="content">	
-            <p align="center"><h2 align="center">Imagenes de Boyacá</h2></p>
-            <div data-role="content">	
-            <div id="navcontainer">
-            
-        <ul id="gale" data-role="listview" type="circle" >
-        <li><a href="#page5">Imagen 1</a></li>
-        <li><a href="#page5">Imagen 2</a></li>
-        <li><a href="#page5">Imagen 3</a></li>
-        <li><a href="#page5">Imagen 4</a></li>
-        <li><a href="#page5">Imagen 5</a></li>
-        </ul>
-        </div>
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Galería</h1>
+	</div>
+	<div data-role="content">	
+		<p align="center"><h2 align="center">Imagenes de Boyacá</h2></p>
+		<div data-role="content">	
+		<div id="navcontainer">
         
-        </div>
-    
-    
-    
-            </p>
-    <p>&nbsp;</p>
-                                
-           
-        </div>
-        <div data-role="footer">
-            <h4>Powered by: @juztJQ</h4>
-        </div>
+	<ul id="gale" data-role="listview" type="circle" >
+    <li><a href="#page5">Imagen 1</a></li>
+    <li><a href="#page5">Imagen 2</a></li>
+    <li><a href="#page5">Imagen 3</a></li>
+    <li><a href="#page5">Imagen 4</a></li>
+    <li><a href="#page5">Imagen 5</a></li>
+    </ul>
     </div>
+	
+	</div>
+
+
+
+		</p>
+<p>&nbsp;</p>
+							
+       
+	</div>
+	<div data-role="footer">
+		<h4>Powered by: @juztJQ</h4>
+	</div>
+</div>
 
 <div data-role="page" id="page4">
 	<div data-role="header">
 		<h1>Equipo</h1>
 	</div>
 	<div data-role="content">
-<article><h2>La Red Socialmente Responsable de Boyacá.</h2>
-  <p>&nbsp;</p>
-<p>Te gusta el Social Media, te gusta estar enterado de lo que pasa en Boyacá, quieres aprender más del mundo de Internet ?
-Si es así, estas en el sitio correcto, Tuiteros trabajamos por el beneficio de nuestra linda Tierra!
-Nuestra idea nace el 19 de febrero de 2010, gracias a una propuesta de reunir a un grupo de Tuiteros que vivieran en el departamento y luego se hiciera un encuentro de personal de integración social, se ayudara a disminuir la Brecha Digital y que todos los boyacenses habláramos el mismo idioma de la Tecnología, afortunadamente lo estamos logrando.
-El sábado 21 de agosto de 2010, se realizó el primer encuentro de Tuiteros Boyacá, desde ese momento se establecieron los equipos de trabajo en la inclusión digital.</p>
-<p>&nbsp;</p>
-<h3>Tuiteros por todo el departamento.</h3>
-<p>Todos días luchamos por ser un Grupo de Tuiteros reconocido, que trabaja en beneficio de la comunidad que pertenece a esta red social (Twitter) en Boyacá. Sin embargo, nuestra comunidad ha llegado a espacios nacionales que han visibilizado nuestro trabajo.</p>
-<h3><a>Únete a Tuiteros Boyacá</a></h3>
-<p>&nbsp;</p>
-<p>Te invitamos a formar parte de nuestro grupo, es fácil solo debes tener una cuenta en Twitter y muchas ganas de trabajar desinteresadamente por el beneficio de nuestro departamento. 
-En el Link "forma parte de Tuiteros Boyacá" Regístrate y estaremos en contacto permanente. Desde ya, Bienvenido!.</p></article>
  
-  </div>
+	
+	Contenido Pendiente	
+	</div>
 	<div data-role="footer">
 		<h4>Powered by: @juztJQ</h4>
 	</div>
@@ -272,8 +241,8 @@ En el Link "forma parte de Tuiteros Boyacá" Regístrate y estaremos en contacto
 	<div data-role="content">	
 	
 		<div data-role="content">	
-		<div  ><a href="http://www.tuiterosboyaca.com/images/app/img/download.php?file=imagen1.jpg"  width="60%" height="50%" align="baseline"><img src="http://www.tuiterosboyaca.com/images/app/img/imagen1.jpg"  width="60%" height="50%" align="baseline" /></a>
-        <details>Descripción de la Imagen </details>
+		<div  ><a href="http://192.168.0.10/tuiteros/download.php?file=002.jpg"  width="512" height="384" align="baseline"><img src="images/1.jpg"  width="512" height="384" align="baseline" /></a>
+        <h2>Descripción de la Imagen </h2>
         </div>
 	
 	</div>
@@ -289,22 +258,7 @@ En el Link "forma parte de Tuiteros Boyacá" Regístrate y estaremos en contacto
 		<h4>Powered by: @juztJQ</h4>
 	</div>
 </div>
-<div data-role="page" id="radio">
-	<div data-role="header">
-		<h1>Noticias</h1>
-	</div>
-	<div data-role="content">	
-		<div id="navcontainer">
-        <a data-role="button" href="http://tuiterosboyaca.com/78-app/74-radio" target="new" style="width:50%; position:inherit; margin-left:25%;"> Escuchar en vivo</a>
-	<ul id="your-tweetss" ></ul>
-    </div>	
-    <div id="twitter" >
-	</div>
-	</div>
-	<div data-role="footer">
-		<h4>Powered by: @juztJQ</h4>
-	</div>
-</div>
+
 
 
 </body>
