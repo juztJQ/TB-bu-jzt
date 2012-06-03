@@ -4,14 +4,14 @@
     id        = "com.phonegap.example"
     version   = "1.0.0">
 
-<name>PhoneGap Build Application</name>
+<name>Tuiteros Boyacá</name>
 
 <description>
-A simple PhoneGap Build application.
+Noticias de boyará, imágenes, radio.
 </description>
 
-<author href="https://example.com" email="you@example.com">
-Your Name
+<author href="https://example.com" email="juan.q@hpasion.com">
+Juan Quiroga
 </author>
 
 </widget>

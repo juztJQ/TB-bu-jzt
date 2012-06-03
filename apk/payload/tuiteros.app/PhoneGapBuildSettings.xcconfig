@@ -1,7 +1,0 @@
-//
-//  PhoneGap.xcconfig
-//  tuiteros
-//
-
-// Override this to use your project specific PHONEGAPLIB
-PHONEGAPLIB = /Users/juanguillermoquirogasalamanca/Documents/DW_NAF/PhoneGapLib
